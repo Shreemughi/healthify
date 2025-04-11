@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peach"
+    tools:context=".MainActivity"
+    tools:ignore="VisualLintBounds">
+
+
+    <TextView
+        android:layout_width="413dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/green"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Patient Registration"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_conversion_absoluteHeight="37dp"
+        tools:layout_conversion_absoluteWidth="181dp" />
+
+    <EditText
+        android:id="@+id/et_patient_name"
+        android:layout_width="357dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089"
+        tools:ignore="MissingConstraints,TextContrastCheck"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="379dp"
+        android:textColorHint="#263238"/>
+
+    <EditText
+        android:id="@+id/et_patient_age"
+        android:layout_width="357dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:autofillHints=""
+        android:hint="Age"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"
+        tools:ignore="MissingConstraints,TextContrastCheck"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="379dp"
+        android:textColorHint="#263238"/>
+
+    <EditText
+        android:id="@+id/et_symptoms"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:autofillHints=""
+        android:hint="Describe Your Symptoms"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:textColorHint="#263238"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339"
+        tools:layout_conversion_absoluteHeight="87dp"
+        tools:layout_conversion_absoluteWidth="379dp" />
+
+    <TextView
+        android:layout_width="354dp"
+        android:layout_height="43dp"
+        android:paddingTop="10dp"
+        android:text="Select Appointment Date"
+        android:textColor="@color/green"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        tools:layout_conversion_absoluteHeight="29dp"
+        tools:layout_conversion_absoluteWidth="155dp" />
+
+    <!--suppress AndroidUnknownAttribute -->
+
+    <DatePicker
+        android:id="@+id/dp_appointment_date"
+        android:layout_width="336dp"
+        android:layout_height="328dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863"
+        tools:layout_conversion_absoluteHeight="328dp"
+        tools:layout_conversion_absoluteWidth="309dp" />
+
+    <Button
+        android:id="@+id/book_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="Submit"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="396dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:text="Male"
+            android:textColor="#263238"/>
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="123dp"
+            android:layout_height="53dp"
+            android:text="Female"
+            android:textColor="#263238"/>
+
+        <RadioButton
+            android:id="@+id/rb_other"
+            android:layout_width="110dp"
+            android:layout_height="53dp"
+            android:text="Other"
+            tools:ignore="VisualLintBounds"
+            android:textColor="#263238"/>
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
